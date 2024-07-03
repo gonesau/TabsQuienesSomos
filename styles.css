@@ -99,6 +99,15 @@ table {
     text-align: center;
 }
 
+#representaciones th{
+    width: 50%;
+    font-size:medium;
+}
+
+#representaciones tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
 .styled-table td:first-child {
     background-color: #e3f2fd;
     color: #1e88e5;
