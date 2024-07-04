@@ -22,3 +22,21 @@ function openTab(evt, tabName) {
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".tab-button").click();
 });
+
+function toggleTable() {
+    var tableContainer = document.getElementById('tableContainer');
+    var toggleButton = document.getElementById('toggleButton');
+    var hideButton = document.getElementById('hideButton');
+    
+    if (tableContainer.style.display === "none") {
+        tableContainer.style.display = "block";
+        tableContainer.style.maxHeight = tableContainer.scrollHeight + "px";
+        toggleButton.style.display = "none";
+    } else {
+        tableContainer.style.maxHeight = "0";
+        setTimeout(function() {
+            tableContainer.style.display = "none";
+            toggleButton.style.display = "block";
+        }, 500);
+    }
+}

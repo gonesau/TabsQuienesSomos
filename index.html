@@ -29,7 +29,7 @@
     </div>
     <div class="tab-content" id="tema1">
       <div class="section">
-        <h3 class="section-title">¿Quiénes Somos?</h3>
+
         <p>
           El Proyecto de Integración y Desarrollo de Mesoamérica es un
           mecanismo para la facilitación del diálogo, la cooperación e
@@ -77,99 +77,103 @@
         </p>
       </div>
       <div class="section">
-        <h3 class="section-title">Co-Presidencia de la Comisión Ejecutiva</h3>
-        <table>
-          <thead>
-            <tr>
-              <th rowspan="2">Presidencia Permanente</th>
-              <th colspan="3">Presidencias Pro Tempore</th>
-            </tr>
-            <tr>
-              <th style="text-align: center;">Año</th>
-              <th>Primer Trimestre</th>
-              <th>Segundo Trimestre</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td rowspan="5">
-                <p style="text-align: center">México</p>
-                <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Mexico_svg.png" alt="" srcset=""
-                  style="display: block; margin: 0 auto" />
-              </td>
-              <td style="text-align: center;">2024</td>
-              <td>
-                <p style="text-align: center">República Dominicana</p>
-                <img src="http://proyectomesoamerica.org/images/125px-Flag_of_the_Dominican_Republic_svg.png" alt=""
-                  style="display: block; margin: 0 auto" />
-              </td>
-              <td>
-                <p style="text-align: center">Belize</p>
-                <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Belize_svg.png" alt=""
-                  style="display: block; margin: 0 auto" />
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align: center;">2025</td>
-              <td>
-                <p style="text-align: center">Guatemala</p>
-                <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Guatemala_svg.png" alt=""
-                  style="display: block; margin: 0 auto" />
-              </td>
-              <td>
-                <p style="text-align: center">El Salvador</p>
-                <img src="http://proyectomesoamerica.org/images/125px-Flag_of_El_Salvador_svg.png" alt=""
-                  style="display: block; margin: 0 auto" />
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align: center;">2026</td>
-              <td>
-                <p style="text-align: center">Honduras</p>
-                <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Honduras_svg.png" alt=""
-                  style="display: block; margin: 0 auto" />
-              </td>
-              <td>
-                <p style="text-align: center">Nicaragua</p>
-                <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Nicaragua_svg.png" alt=""
-                  style="display: block; margin: 0 auto" />
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align: center;">2027</td>
-              <td>
-                <p style="text-align: center">Costa Rica</p>
-                <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Costa_Rica_svg.png" alt=""
-                  style="display: block; margin: 0 auto" />
-              </td>
-              <td>
-                <p style="text-align: center">Panamá</p>
-                <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Panama_svg.png" alt=""
-                  style="display: block; margin: 0 auto" />
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align: center;">2028</td>
-              <td>
-                <p style="text-align: center">Colombia</p>
-                <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Colombia_svg.png" alt=""
-                  style="display: block; margin: 0 auto" />
-              </td>
-              <td>
-                <p style="text-align: center">República Dominicana</p>
-                <img src="http://proyectomesoamerica.org/images/125px-Flag_of_the_Dominican_Republic_svg.png" alt=""
-                  style="display: block; margin: 0 auto" />
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <br>
-        <p>
-          Conoce más en el
-          <a href="http://www.proyectomesoamerica.org/phocadownload/Estatutos/reglamentoPM-Firmado/Reglamento%20de%20Funcionamiento%20del%20PM_firmado.pdf"
-            target="_blank">Reglamento para el Funcionamiento del Proyecto Mesoamérica.</a>
-        </p>
+        <button class="botondesplegar" id="toggleButton" onclick="toggleTable()">Mostrar Más</button>
+        <div id="tableContainer" style="display: none;">
+          <h3 class="section-title">Co-Presidencia de la Comisión Ejecutiva</h3>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2">Presidencia Permanente</th>
+                <th colspan="3">Presidencias Pro Tempore</th>
+              </tr>
+              <tr>
+                <th style="text-align: center;">Año</th>
+                <th>Primer Trimestre</th>
+                <th>Segundo Trimestre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="5">
+                  <p style="text-align: center">México</p>
+                  <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Mexico_svg.png" alt=""
+                    style="display: block; margin: 0 auto" />
+                </td>
+                <td style="text-align: center;">2024</td>
+                <td>
+                  <p style="text-align: center">República Dominicana</p>
+                  <img src="http://proyectomesoamerica.org/images/125px-Flag_of_the_Dominican_Republic_svg.png" alt=""
+                    style="display: block; margin: 0 auto" />
+                </td>
+                <td>
+                  <p style="text-align: center">Belice</p>
+                  <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Belize_svg.png" alt=""
+                    style="display: block; margin: 0 auto" />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: center;">2025</td>
+                <td>
+                  <p style="text-align: center">Guatemala</p>
+                  <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Guatemala_svg.png" alt=""
+                    style="display: block; margin: 0 auto" />
+                </td>
+                <td>
+                  <p style="text-align: center">El Salvador</p>
+                  <img src="http://proyectomesoamerica.org/images/125px-Flag_of_El_Salvador_svg.png" alt=""
+                    style="display: block; margin: 0 auto" />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: center;">2026</td>
+                <td>
+                  <p style="text-align: center">Honduras</p>
+                  <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Honduras_svg.png" alt=""
+                    style="display: block; margin: 0 auto" />
+                </td>
+                <td>
+                  <p style="text-align: center">Nicaragua</p>
+                  <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Nicaragua_svg.png" alt=""
+                    style="display: block; margin: 0 auto" />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: center;">2027</td>
+                <td>
+                  <p style="text-align: center">Costa Rica</p>
+                  <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Costa_Rica_svg.png" alt=""
+                    style="display: block; margin: 0 auto" />
+                </td>
+                <td>
+                  <p style="text-align: center">Panamá</p>
+                  <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Panama_svg.png" alt=""
+                    style="display: block; margin: 0 auto" />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: center;">2028</td>
+                <td>
+                  <p style="text-align: center">Colombia</p>
+                  <img src="http://proyectomesoamerica.org/images/125px-Flag_of_Colombia_svg.png" alt=""
+                    style="display: block; margin: 0 auto" />
+                </td>
+                <td>
+                  <p style="text-align: center">República Dominicana</p>
+                  <img src="http://proyectomesoamerica.org/images/125px-Flag_of_the_Dominican_Republic_svg.png" alt=""
+                    style="display: block; margin: 0 auto" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <p>Conoce más en el <a
+              href="http://www.proyectomesoamerica.org/phocadownload/Estatutos/reglamentoPM-Firmado/Reglamento%20de%20Funcionamiento%20del%20PM_firmado.pdf"
+              target="_blank">Reglamento para el Funcionamiento del Proyecto Mesoamérica.</a></p>
+          <button class="botondesplegar" id="hideButton" onclick="toggleTable()">Ocultar</button>
+        </div>
       </div>
+
+
       <div class="section">
         <h3 class="section-title">Más Información</h3>
         <p>
@@ -296,7 +300,12 @@
     </div>
     <div class="tab-content" id="tema2">
       <div class="section">
-        <h3 class="section-title" style="text-align: center;">Antecedentes</h3>
+        <p>
+          Después de 23 años de su instalación (2001-2007, Plan Puebla Panamá; 2008 a la fecha, Proyecto Mesoamérica),
+          es relevante remarcar aquellos grandes hitos que han permitido el desarrollo institucional del mecanismo, para
+          que responda con mayor medida a las necesidades y desafíos que enfrenta la región y aporte a su desarrollo
+          social, económico y ambiental.
+        </p>
         <table class="styled-table">
           <tbody>
             <tr>
@@ -553,126 +562,138 @@
     <div class="tab-content" id="tema3">
       <div class="section">
         <h3 class="section-title">Normativa Institucional</h3>
-    <p>Acta que institucionaliza el Proyecto de Integración y Desarrollo de Mesoamérica, Julio 2009. Guanacaste, Costa Rica, 29 de julio de 2009, XI Cumbre de Tuxtla</p>
-    <ul>
-        <li>Ver Acta que institucionaliza el Proyecto Mesoamérica</li>
-    </ul>
-    <p>Reglamento para el Funcionamiento del Proyecto de Integración y Desarrollo de Mesoamérica, Marzo 2016. Guatemala, 21 de junio de 2016</p>
-    <ul>
-        <li>Ve Reglamento para el Funcionamiento del Proyecto Mesoamérica</li>
-    </ul>
+        <p>Acta que institucionaliza el Proyecto de Integración y Desarrollo de Mesoamérica, Julio 2009. Guanacaste,
+          Costa Rica, 29 de julio de 2009, XI Cumbre de Tuxtla</p>
+        <ul>
+          <li>Ver Acta que institucionaliza el Proyecto Mesoamérica</li>
+        </ul>
+        <p>Reglamento para el Funcionamiento del Proyecto de Integración y Desarrollo de Mesoamérica, Marzo 2016.
+          Guatemala, 21 de junio de 2016</p>
+        <ul>
+          <li>Ve Reglamento para el Funcionamiento del Proyecto Mesoamérica</li>
+        </ul>
 
-    <h3 class="section-title">CUMBRES DEL MECANISMO DE DIÁLOGO Y CONCERTACIÓN DE TUXTLA</h3>
-    <h3>XVII Cumbre de Tuxtla. San Pedro Sula, Honduras, 23 de agosto de 2019</h3>
-    <ul>
-        <li>Declaración de San Pedro Sula “Mesoamérica conecta”</li>
-        <li>Informe Proyecto Mesoamérica 2019</li>
-    </ul>
+        <h3 class="section-title">Cumbres del Mecanismo de Diálogo y Concertación de Tuxtla</h3>
+        <h3>XVII Cumbre de Tuxtla. San Pedro Sula, Honduras, 23 de agosto de 2019</h3>
+        <ul>
+          <li>Declaración de San Pedro Sula “Mesoamérica conecta”</li>
+          <li>Informe Proyecto Mesoamérica 2019</li>
+        </ul>
 
-    <h3>XVI Cumbre. San José, Costa Rica, 29 de marzo de 2017</h3>
-    <ul>
-        <li>Declaración de San José “Mesoamérica nos une”</li>
-        <li>Informe Proyecto Mesoamérica 2017</li>
-    </ul>
+        <h3>XVI Cumbre. San José, Costa Rica, 29 de marzo de 2017</h3>
+        <ul>
+          <li>Declaración de San José “Mesoamérica nos une”</li>
+          <li>Informe Proyecto Mesoamérica 2017</li>
+        </ul>
 
-    <h3>XV Cumbre. Antigua, Guatemala, 26 de junio de 2015</h3>
-    <ul>
-        <li>Declaración de Antigua, Guatemala “Paz, integración y prosperidad: hacia una agenda renovada de cooperación mesoamericana”</li>
-        <li>Anexo de la Declaración de los Jefes de Estado y de Gobierno del Mecanismo de Diálogo y Concertación de Tuxtla: Resoluciones Sectoriales del Proyecto de Integración y Desarrollo de Mesoamérica</li>
-        <li>Informe Proyecto Mesoamérica 2015</li>
-    </ul>
+        <h3>XV Cumbre. Antigua, Guatemala, 26 de junio de 2015</h3>
+        <ul>
+          <li>Declaración de Antigua, Guatemala “Paz, integración y prosperidad: hacia una agenda renovada de
+            cooperación mesoamericana”</li>
+          <li>Anexo de la Declaración de los Jefes de Estado y de Gobierno del Mecanismo de Diálogo y Concertación de
+            Tuxtla: Resoluciones Sectoriales del Proyecto de Integración y Desarrollo de Mesoamérica</li>
+          <li>Informe Proyecto Mesoamérica 2015</li>
+        </ul>
 
-    <h3>XIV Cumbre. Mérida, Yucatán, México, 30 de abril de 2014</h3>
-    <p>En el marco de la VI Cumbre de la Asociación de Estados del Caribe, celebrada en el día 30 de abril de 2014 en Mérida, México, los Jefes de Estado y de Gobierno de Mesoamérica que participaron consideraron propicio adelantar el diálogo de la XIV Cumbre de Tuxtla, con lo cual se definió que la próxima cita sería la XV Cumbre de Tuxtla. Fuente: Agenda anotada para la reunión de Comisión Ejecutiva CE-02-2014.</p>
+        <h3>XIV Cumbre. Mérida, Yucatán, México, 30 de abril de 2014</h3>
+        <p>En el marco de la VI Cumbre de la Asociación de Estados del Caribe, celebrada en el día 30 de abril de 2014
+          en Mérida, México, los Jefes de Estado y de Gobierno de Mesoamérica que participaron consideraron propicio
+          adelantar el diálogo de la XIV Cumbre de Tuxtla, con lo cual se definió que la próxima cita sería la XV Cumbre
+          de Tuxtla. Fuente: Agenda anotada para la reunión de Comisión Ejecutiva CE-02-2014.</p>
 
-    <h3>XIII Cumbre. Mérida, Yucatán, México, 5 de diciembre de 2011</h3>
-    <ul>
-        <li>Declaración de Mérida</li>
-        <li>Declaración Conjunta Sobre Crimen Organizado y Narcotráfico</li>
-        <li>Resolución 5 Sobre Cooperación Técnica Regional</li>
-        <li>Anexo de la Declaración de Mérida: Resoluciones Sectoriales del Proyecto de Integración y Desarrollo de Mesoamérica</li>
-        <li>Informe Proyecto Mesoamérica 2010-2011</li>
-    </ul>
+        <h3>XIII Cumbre. Mérida, Yucatán, México, 5 de diciembre de 2011</h3>
+        <ul>
+          <li>Declaración de Mérida</li>
+          <li>Declaración Conjunta Sobre Crimen Organizado y Narcotráfico</li>
+          <li>Resolución 5 Sobre Cooperación Técnica Regional</li>
+          <li>Anexo de la Declaración de Mérida: Resoluciones Sectoriales del Proyecto de Integración y Desarrollo de
+            Mesoamérica</li>
+          <li>Informe Proyecto Mesoamérica 2010-2011</li>
+        </ul>
 
-    <h3>XII Cumbre. Cartagena de Indias, Colombia, 26 de octubre de 2010</h3>
-    <ul>
-        <li>Declaración de Cartagena</li>
-        <li>Informe Proyecto Mesoamérica 2009-2010</li>
-    </ul>
+        <h3>XII Cumbre. Cartagena de Indias, Colombia, 26 de octubre de 2010</h3>
+        <ul>
+          <li>Declaración de Cartagena</li>
+          <li>Informe Proyecto Mesoamérica 2009-2010</li>
+        </ul>
 
-    <h3>XI Cumbre. Guanacaste, Costa Rica, 27, 28 y 29 de julio de 2009</h3>
-    <ul>
-        <li>Declaración de Guanacaste</li>
-        <li>Informe Ejecutivo Proyecto Mesoamérica 2008-2009</li>
-    </ul>
+        <h3>XI Cumbre. Guanacaste, Costa Rica, 27, 28 y 29 de julio de 2009</h3>
+        <ul>
+          <li>Declaración de Guanacaste</li>
+          <li>Informe Ejecutivo Proyecto Mesoamérica 2008-2009</li>
+        </ul>
 
-    <h3>X Cumbre. Villahermosa, Tabasco, México, 28 de junio de 2008</h3>
-    <ul>
-        <li>Declaración de Villahermosa</li>
-        <li>Informe El PPP: Avances, retos y perspectivas, 27 y 28 junio 2008</li>
-    </ul>
+        <h3>X Cumbre. Villahermosa, Tabasco, México, 28 de junio de 2008</h3>
+        <ul>
+          <li>Declaración de Villahermosa</li>
+          <li>Informe El PPP: Avances, retos y perspectivas, 27 y 28 junio 2008</li>
+        </ul>
 
-    <h3>Cumbre Extraordinaria - Cumbre de Mandatarios para el fortalecimiento del Plan Puebla Panamá. Campeche, México, 10 de abril de 2007</h3>
-    <ul>
-        <li>Declaración conjunta de Campeche</li>
-    </ul>
+        <h3>Cumbre Extraordinaria - Cumbre de Mandatarios para el fortalecimiento del Plan Puebla Panamá. Campeche,
+          México, 10 de abril de 2007</h3>
+        <ul>
+          <li>Declaración conjunta de Campeche</li>
+        </ul>
 
-    <h3>IX Cumbre. San Pedro, Cayo Ambergris, Belice, 29 de junio de 2007</h3>
-    <ul>
-        <li>Declaración conjunta</li>
-    </ul>
+        <h3>IX Cumbre. San Pedro, Cayo Ambergris, Belice, 29 de junio de 2007</h3>
+        <ul>
+          <li>Declaración conjunta</li>
+        </ul>
 
-    <h3>VIII Cumbre. Ciudad de Panamá, 11 de julio de 2006</h3>
-    <ul>
-        <li>Declaración Conjunta</li>
-    </ul>
+        <h3>VIII Cumbre. Ciudad de Panamá, 11 de julio de 2006</h3>
+        <ul>
+          <li>Declaración Conjunta</li>
+        </ul>
 
-    <h3>VII Cumbre. Tegucigalpa, Honduras, 29 de junio de 2005</h3>
-    <ul>
-        <li>Declaración de Tegucigalpa</li>
-    </ul>
+        <h3>VII Cumbre. Tegucigalpa, Honduras, 29 de junio de 2005</h3>
+        <ul>
+          <li>Declaración de Tegucigalpa</li>
+        </ul>
 
-    <h3>VI Cumbre. Managua, Nicaragua, 25 de marzo de 2004</h3>
-    <ul>
-        <li>Declaración de Managua</li>
-        <li>Acta que institucionaliza el mecanismo del Plan Puebla-Panamá</li>
-    </ul>
+        <h3>VI Cumbre. Managua, Nicaragua, 25 de marzo de 2004</h3>
+        <ul>
+          <li>Declaración de Managua</li>
+          <li>Acta que institucionaliza el mecanismo del Plan Puebla-Panamá</li>
+        </ul>
 
-    <h3>V Cumbre. Mérida, Yucatán, México, 27 y 28 de junio de 2002</h3>
-    <ul>
-        <li>Declaración de Mérida</li>
-    </ul>
+        <h3>V Cumbre. Mérida, Yucatán, México, 27 y 28 de junio de 2002</h3>
+        <ul>
+          <li>Declaración de Mérida</li>
+        </ul>
 
-    <h3>Cumbre Extraordinaria de los países integrantes del Mecanismo de Diálogo y Concertación de Tuxtla. San Salvador, El Salvador, 15 de junio de 2001</h3>
-    <ul>
-        <li>Declaración conjunta</li>
-    </ul>
+        <h3>Cumbre Extraordinaria de los países integrantes del Mecanismo de Diálogo y Concertación de Tuxtla. San
+          Salvador, El Salvador, 15 de junio de 2001</h3>
+        <ul>
+          <li>Declaración conjunta</li>
+        </ul>
 
-    <h3>IV Cumbre. Ciudad de Guatemala, Guatemala, 25 de agosto de 2000</h3>
-    <ul>
-        <li>Declaración conjunta</li>
-    </ul>
+        <h3>IV Cumbre. Ciudad de Guatemala, Guatemala, 25 de agosto de 2000</h3>
+        <ul>
+          <li>Declaración conjunta</li>
+        </ul>
 
-    <h3>III Cumbre. San Salvador, El Salvador, 17 de julio de 1998</h3>
-    <ul>
-        <li>Declaración conjunta</li>
-    </ul>
+        <h3>III Cumbre. San Salvador, El Salvador, 17 de julio de 1998</h3>
+        <ul>
+          <li>Declaración conjunta</li>
+        </ul>
 
-    <h3>II Reunión de los Jefes de Estado y de Gobierno de los países integrantes del Mecanismo de Diálogo y Concertación de Tuxtla. TUXTLA II. San José, República de Costa Rica, 16 de Febrero de 1996</h3>
-    <ul>
-        <li>Declaración Conjunta y Plan de Acción de la Cumbre Tuxtla Gutiérrez II</li>
-    </ul>
+        <h3>II Reunión de los Jefes de Estado y de Gobierno de los países integrantes del Mecanismo de Diálogo y
+          Concertación de Tuxtla. TUXTLA II. San José, República de Costa Rica, 16 de Febrero de 1996</h3>
+        <ul>
+          <li>Declaración Conjunta y Plan de Acción de la Cumbre Tuxtla Gutiérrez II</li>
+        </ul>
 
-    <h3>I Reunión de los Jefes de Estado y de Gobierno de los países integrantes del Mecanismo de Diálogo y Concertación de Tuxtla. TUXTLA I. Tuxtla Gutiérrez, Chiapas, México, 10 y 11 de enero de 1991</h3>
-    <ul>
-        <li>Declaración de Tuxtla Gutiérrez “Tuxtla I”</li>
-    </ul>
+        <h3>I Reunión de los Jefes de Estado y de Gobierno de los países integrantes del Mecanismo de Diálogo y
+          Concertación de Tuxtla. TUXTLA I. Tuxtla Gutiérrez, Chiapas, México, 10 y 11 de enero de 1991</h3>
+        <ul>
+          <li>Declaración de Tuxtla Gutiérrez “Tuxtla I”</li>
+        </ul>
       </div>
     </div>
     <div class="tab-content" id="tema4">
       <div class="section">
-        <h3 class="section-title">Representaciones de los países</h3>
-        <p>Los 10 países miembros del Proyecto Mesoamérica son representados en la Comisión Ejecutiva por Comisionados pertenecientes a los Ministerios o Secretarías de Relaciones Exteriores.</p>
+        <p>Los 10 países miembros del Proyecto Mesoamérica son representados en la Comisión Ejecutiva por Comisionados
+          pertenecientes a los Ministerios o Secretarías de Relaciones Exteriores.</p>
         <table class="styled-table" id="representaciones">
           <tbody>
             <tr>
@@ -727,7 +748,7 @@
 
                 <p>
                   <strong>Presidencias Pro Tempore
-                  <br>2024</strong>
+                    <br>2024</strong>
                   <br>República Dominicana
                   <br>Belice
                 </p>
@@ -757,14 +778,63 @@
 
               </td>
             </tr>
-            </tbody>
-            </table>
-      </div>  
+          </tbody>
+        </table>
+      </div>
     </div>
     <div class="tab-content" id="tema5">
       <div class="section">
-        <h3 class="section-title">Plan estratégico institucional</h3>
-      </div>
+        <p>
+          Ahora hemos iniciado un proceso de transformación general que se guía por medio de nuestro Plan Estratégico
+          Institucional (PEI) 2024-2028, para potenciar la integración de los Estados miembros y contribuir al
+          desarrollo de la Región Mesoamericana, desde una perspectiva sostenible, verde, incluyente y resiliente,
+          mediante la implementación de tres Pilares:
+        <ol>
+          <li><strong>Fortalecimiento de Capacidades Institucionales y Sectoriales</strong></li>
+          <li><strong>Promoción de Alianzas y Posicionamiento Internacional</strong></li>
+          <li><strong>Gestión del Financiamiento y Cooperación</strong></li>
+        </ol>
+        </p>
+        <div style="text-align: center;">
+          <img id="imgpei" src="http://proyectomesoamerica.org/images/PM/2024/destacados/PEI.png" alt="" srcset="">
+        </div>
+
+        <h3 class="section-title">Marco Filosófico del Proyecto Mesoamérica</h3>
+        <p>
+          <strong>Misión</strong>
+          <br>Somos un mecanismo para la facilitación del diálogo, la cooperación e instrumentación de acciones y proyectos para contribuir al desarrollo sostenible y a la integración de nuestros países.
+        </p>
+        <p>
+          <strong>Visión 2030</strong>
+          <br>Ser un mecanismo que responde eficazmente a las necesidades y realidades de los países de la Región Mesoamericana en el marco de sus prioridades de desarrollo sostenible. 
+        </p>
+        <p>
+          <strong>Objetivos Generales</strong>
+            <ol>
+              <li>Impulsar proyectos regionales que, con un enfoque integral, desarrollen sus objetivos sectoriales. </li>
+              <li>Priorizar acciones y proyectos que faciliten la creación de Bienes Públicos Regionales. </li>
+              <li>Potenciar el desarrollo de capacidades e intercambio de experiencias y buenas prácticas entre países miembros, así como con otros Estados y actores internacionales.</li>
+              <li>Generar sinergias entre las agendas de desarrollo de los países parte de la Región Mesoamericana y otros mecanismos e instituciones de alcance regional.</li>
+              <li>Gestionar recursos para el financiamiento de acciones y proyectos regionales.</li>
+            </ol>
+        </p>
+
+        <p>
+          <strong>Valores</strong>
+          <ol>
+            <li>Eficacia</li>
+            <li>Eficiencia</li>
+            <li>Solidaridad</li>
+            <li>Compromiso (corresponsabilidad)</li>
+            <li>Equidad</li>
+            <li>Respeto</li>
+            <li>Transparencia</li>
+            <li>Flexibilidad</li>
+            <li>Diálogo y concertación</li>
+            <li>Responsabilidad social y ambiental</li>
+          </ol>
+        </p>
+
     </div>
   </section>
 
