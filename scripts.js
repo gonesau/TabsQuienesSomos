@@ -40,3 +40,4 @@ function toggleTable() {
         }, 500);
     }
 }
+   

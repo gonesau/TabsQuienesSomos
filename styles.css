@@ -1,21 +1,20 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-}
-
-
-.tabs-container {
-    width: 90%;
+  }
+  
+  .tabs-container {
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.tabs {
+  }
+  
+  .tabs {
     display: flex;
     justify-content: space-around;
     background-color: #f1f1f1;
@@ -24,9 +23,9 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-.tab-button {
+  }
+  
+  .tab-button {
     background-color: inherit;
     border: none;
     outline: none;
@@ -34,57 +33,68 @@ body {
     padding: 14px 16px;
     transition: background-color 0.3s, color 0.3s;
     font-size: 17px;
-}
-
-.tab-button:hover {
+  }
+  
+  .tab-button:hover {
     background-color: #ddd;
-}
-
-.tab-button.active {
+  }
+  
+  .tab-button.active {
     background-color: #ccc;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-weight: bold;
-}
-
-.tab-content {
+  }
+  
+  .tab-content {
     display: none;
     padding: 20px;
     border: 1px solid #ccc;
     border-top: none;
     animation: fadeIn 0.5s;
-}
-
-.tab-content.active {
+  }
+  
+  .img_container {
+    text-align: center;
+    margin: 2%;
+  }
+  
+  .tab-content.active {
     display: block;
-}
-
-.section {
+  }
+  
+  .section {
     margin-bottom: 20px;
-}
-
-.section-title {
+  }
+  
+  .section-title {
     background-color: #e0e0e0;
     padding: 10px;
     font-weight: bold;
     color: #333;
     border-radius: 5px;
     margin-bottom: 10px;
-}
-
-.responsive-image {
+  }
+  
+  .responsive-image {
     width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-table {
+  }
+  
+  .img_estructura {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-}
-
-.hidden {
+  }
+  
+  .hidden {
     display: none;
   }
   
@@ -98,9 +108,7 @@ table {
     max-height: 1000px; /* Ajusta el valor según la altura de tu contenido */
   }
   
-
-  
-  .botondesplegar{
+  .botondesplegar {
     cursor: pointer;
     padding: 10px 20px;
     background-color: #ccc;
@@ -108,83 +116,145 @@ table {
     border: none;
     border-radius: 5px;
     margin-top: 10px;
-    font-size:small;
+    font-size: small;
     font-weight: bold;
-}
-
-
-#imgpei{
-align-content: center;
+  }
+  
+  #imgpei {
+    align-content: center;
     width: 50%;
     height: auto;
     border-radius: 10px;
-}
-
-
-.botondesplegar:hover {
+  }
+  
+  .botondesplegar:hover {
     background-color: #b1b1b1;
-}
-.styled-table th, .styled-table td {
+  }
+  
+  .styled-table th,
+  .styled-table td {
     padding: 10px;
     vertical-align: middle;
     text-align: left;
-}
-
-.styled-table th {
+  }
+  
+  .styled-table th {
     background-color: #327ae6;
     color: #ffffff;
     font-size: large;
     width: 20%;
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
-}
-
-#representaciones th{
+  }
+  
+  #representaciones th {
     width: 50%;
-    font-size:medium;
-}
-
-#representaciones tbody tr:hover {
+    font-size: medium;
+  }
+  
+  #representaciones tbody tr:hover {
     background-color: #f1f1f1;
-}
-
-.styled-table td:first-child {
-    background-color: #e3f2fd;
-    color: #1e88e5;
-}
-
-.styled-table tbody tr:nth-child(odd) {
+  }
+  
+  /* Agregando degradado de colores para la primera columna */
+  .styled-table th:nth-child(1),
+  .styled-table td:nth-child(1) {
+    color: #ffffff;
+  }
+  .styled-table tbody tr:nth-child(1) th:nth-child(1) {
+    background-color: #4a90e2; /* Paso 1: Azul */
+  }
+  
+  .styled-table tbody tr:nth-child(2) th:nth-child(1) {
+    background-color: #5d9ed9; /* Paso 2 */
+  }
+  
+  .styled-table tbody tr:nth-child(3) th:nth-child(1) {
+    background-color: #70accf; /* Paso 3 */
+  }
+  
+  .styled-table tbody tr:nth-child(4) th:nth-child(1) {
+    background-color: #83bac6; /* Paso 4 */
+  }
+  
+  .styled-table tbody tr:nth-child(5) th:nth-child(1) {
+    background-color: #96c8bc; /* Paso 5 */
+  }
+  
+  .styled-table tbody tr:nth-child(6) th:nth-child(1) {
+    background-color: #aad6b3; /* Paso 6 */
+  }
+  
+  .styled-table tbody tr:nth-child(7) th:nth-child(1) {
+    background-color: #aad6b3; /* Paso 7 */
+  }
+  
+  .styled-table tbody tr:nth-child(8) th:nth-child(1) {
+    background-color: #9cc7aa; /* Paso 8 */
+  }
+  
+  .styled-table tbody tr:nth-child(9) th:nth-child(1) {
+    background-color: #8fb7a1; /* Paso 9 */
+  }
+  
+  .styled-table tbody tr:nth-child(10) th:nth-child(1) {
+    background-color: #81a898; /* Paso 10 */
+  }
+  
+  .styled-table tbody tr:nth-child(11) th:nth-child(1) {
+    background-color: #73998f; /* Paso 11 */
+  }
+  
+  .styled-table tbody tr:nth-child(12) th:nth-child(1) {
+    background-color: #65aa86; /* Paso 12 */
+  }
+  
+  .styled-table th {
+    color: #ffffff; /* Texto blanco */
+    text-align: center; /* Alineación centrada del texto */
+  }
+  
+  .styled-table td:first-child {
+    color: #ffffff;
+  }
+  
+  .styled-table tbody tr:nth-child(odd) {
     background-color: #f1f1f1;
-}
-
-.styled-table tbody tr:hover {
+  }
+  
+  .styled-table tbody tr:hover {
     background-color: #aaaaaa;
-}
-
-.styled-table tbody td:hover {
+  }
+  
+  .styled-table tbody td:hover {
     background-color: #eef8e3;
-}
-
-p {
+  }
+  
+  p {
     text-align: justify;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@media (max-width: 600px) {
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 600px) {
     .tabs {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .tab-button {
-        text-align: left;
-        padding: 10px 20px;
+      text-align: left;
+      padding: 10px 20px;
     }
-
+  
     .tab-button.active {
-        border-radius: 0;
+      border-radius: 0;
     }
-}
+  }
+  
