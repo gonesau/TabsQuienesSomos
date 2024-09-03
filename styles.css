@@ -158,13 +158,20 @@ html, body {
     background-color: #f1f1f1;
   }
 
-  #representaciones img {
+  #tema4 img {
     width: 235px;
     height: 373px;
     object-fit: cover;
 }
 
-  
+.styled-table img {
+  width: 235px;
+  height: 280px;
+  object-fit: cover;
+}
+
+
+
   /* Agregando degradado de colores para la primera columna */
   .styled-table th:nth-child(1),
   .styled-table td:nth-child(1) {
